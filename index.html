@@ -1,40 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mahanyas Baira | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-    <nav id="desktop-nav">
-        <div class="logo">Mahanyas Baira</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+  <header>
+    <nav class="navbar">
+      <div class="brand-title">Mahanyas Baira</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
+      <div class="navbar-links">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-    <nav id=" burger-nav">
-        <div class="logo">Mahanyas Baira</div>
-        <div class="burger-menu">
-            <div class="burger-icon" onclick="togglemMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="Menu-links">
-                <li><a href="#about" onclick="toggleMenu()">About</a></li>
-                <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-                <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-                 <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-            </div>
-        </div>
-    </nav>
-    <script src="script.js"></script>
+  </header>
+  <main>
+    <section id="about" class="section animate fade-in">
+      <h1>About Me</h1>
+      <p>I’m Mahanyas Baira, a Computer Science major at Colorado State University. Passionate about cybersecurity and IT support, I’m dedicated to protecting digital assets and enhancing user experiences.</p>
+    </section>
+    <section id="experience" class="section animate slide-in-left">
+      <h2>Experience</h2>
+      <div class="card">
+        <h3>Cyber Security Intern</h3>
+        <p><strong>Colorado State University - Division of Information Technology</strong><br>
+        May 2025 - Present | Fort Collins, CO (Hybrid)</p>
+        <ul>
+          <li>Accelerated cybersecurity skills using Splunk, Qualys, Nessus, Wireshark, Active Directory, Entra ID, Python, and PowerShell.</li>
+          <li>Executed vulnerability scans, analyzed threats, and responded to incidents using Splunk, Nessus, and Wireshark.</li>
+          <li>Engineered automation scripts, managed user accounts, and led cybersecurity awareness efforts campus-wide.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>IT Support Specialist</h3>
+        <p><strong>Colorado State University Libraries</strong><br>
+        Mar 2025 - Present | Fort Collins, CO (On-site)</p>
+        <ul>
+          <li>Gained hands-on experience with Active Directory, PDQ Deploy, and Microsoft Entra ID.</li>
+          <li>Supported system administration tasks, user account management, and software deployment.</li>
+          <li>Contributed to maintaining and improving library technology services.</li>
+        </ul>
+      </div>
+    </section>
+    <section id="skills" class="section animate slide-in-right">
+      <h2>Skills</h2>
+      <ul class="skills-list">
+        <li>Vulnerability Assessment</li>
+        <li>Splunk</li>
+        <li>Qualys</li>
+        <li>Nessus</li>
+        <li>Wireshark</li>
+        <li>Active Directory</li>
+        <li>Microsoft Entra ID</li>
+        <li>Python</li>
+        <li>PowerShell</li>
+        <li>PDQ Deploy</li>
+      </ul>
+    </section>
+    <section id="contact" class="section animate fade-in">
+      <h2>Contact</h2>
+      <p>Fort Collins, CO 80521 | <a href="tel:+19833337689">+1(983) 333-7689</a> | <a href="mailto:mahanyas.baira@colostate.edu">mahanyas.baira@colostate.edu</a></p>
+      <p><a href="https://github.com/mahanyasbaira" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mahanyasbaira" target="_blank">LinkedIn</a></p>
+    </section>
+  </main>
+  <script src="script.js"></script>
 </body>
 </html>

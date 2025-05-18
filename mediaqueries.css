@@ -1,8 +1,21 @@
-@media screen and (max-width: 1200px){
-    #desktop-nav {
-        display: none;
-    }
-    #burger-nav {
-        display: felx;
-    }
+
+@media (max-width: 768px) {
+  .toggle-button {
+    display: flex;
+  }
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+  .navbar-links ul {
+    flex-direction: column;
+    width: 100%;
+  }
+  .navbar-links ul li {
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+  .navbar-links.active {
+    display: flex;
+  }
 }
