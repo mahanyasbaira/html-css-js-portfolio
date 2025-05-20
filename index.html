@@ -1,80 +1,233 @@
+<!-- index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mahanyas Baira | Portfolio</title>
+  <title>Mahanyas Baira – Cybersecurity & IT Support</title>
+  <!-- Google Font -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+    rel="stylesheet"
+  />
   <link rel="stylesheet" href="style.css" />
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
-  <header>
-    <nav class="navbar">
-      <div class="brand-title">Mahanyas Baira</div>
-      <a href="#" class="toggle-button">
-        <span class="bar"></span>
-        <span class="bar"></span>
-        <span class="bar"></span>
-      </a>
-      <div class="navbar-links">
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#skills">Skills</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
+  <!-- Desktop nav -->
+  <nav id="desktop-nav">
+    <div class="logo">Mahanyas Baira</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#leadership">Leadership</a></li>
+      <li><a href="#community">Community</a></li>
+      <li><a href="#contact">Contact</a></li>
+      <li><a href="#skills">Skills</a></li>
+    </ul>
+  </nav>
+
+  <!-- Mobile nav -->
+  <nav id="hamburger-nav">
+    <div class="logo">Mahanyas Baira</div>
+    <div class="hamburger-icon" onclick="toggleMenu()">
+      <span></span><span></span><span></span>
+    </div>
+    <div class="menu-links">
+      <a href="#about" onclick="toggleMenu()">About</a>
+      <a href="#projects" onclick="toggleMenu()">Projects</a>
+      <a href="#leadership" onclick="toggleMenu()">Leadership</a>
+      <a href="#community" onclick="toggleMenu()">Community</a>
+      <a href="#contact" onclick="toggleMenu()">Contact</a>
+      <a href="#skills" onclick="toggleMenu()">Skills</a>
+    </div>
+  </nav>
+
+  <!-- Hero / Profile -->
+  <section id="profile">
+    <div class="pic-container reveal">
+      <img src="./assets/profile-pic.png" alt="Mahanyas Baira" />
+    </div>
+    <div class="text-container reveal">
+      <p class="intro">Hello, I'm</p>
+      <h1 class="name">Mahanyas Baira</h1>
+      <p class="role">Cybersecurity Intern & IT Support Specialist</p>
+      <div class="btns">
+        <button class="btn" onclick="window.open('./assets/Mahanyas_Baira_Resume.pdf')">
+          Download Resume
+        </button>
+        <button class="btn" onclick="window.open('./assets/lor.pdf')">
+          Download LOR
+        </button>
+        <button class="btn outline" onclick="location.href='#contact'">
+          Contact Me
+        </button>
       </div>
-    </nav>
-  </header>
-  <main>
-    <section id="about" class="section animate fade-in">
-      <h1>About Me</h1>
-      <p>I’m Mahanyas Baira, a Computer Science major at Colorado State University. Passionate about cybersecurity and IT support, I’m dedicated to protecting digital assets and enhancing user experiences.</p>
-    </section>
-    <section id="experience" class="section animate slide-in-left">
-      <h2>Experience</h2>
-      <div class="card">
-        <h3>Cyber Security Intern</h3>
-        <p><strong>Colorado State University - Division of Information Technology</strong><br>
-        May 2025 - Present | Fort Collins, CO (Hybrid)</p>
-        <ul>
-          <li>Accelerated cybersecurity skills using Splunk, Qualys, Nessus, Wireshark, Active Directory, Entra ID, Python, and PowerShell.</li>
-          <li>Executed vulnerability scans, analyzed threats, and responded to incidents using Splunk, Nessus, and Wireshark.</li>
-          <li>Engineered automation scripts, managed user accounts, and led cybersecurity awareness efforts campus-wide.</li>
-        </ul>
+      <div class="socials">
+        <img
+          src="./assets/linkedin.png"
+          alt="LinkedIn"
+          onclick="location.href='https://www.linkedin.com/in/mahanyasbaira'"
+        />
+        <img
+          src="./assets/github.png"
+          alt="GitHub"
+          onclick="location.href='https://github.com/mahanyasbaira'"
+        />
       </div>
-      <div class="card">
-        <h3>IT Support Specialist</h3>
-        <p><strong>Colorado State University Libraries</strong><br>
-        Mar 2025 - Present | Fort Collins, CO (On-site)</p>
-        <ul>
-          <li>Gained hands-on experience with Active Directory, PDQ Deploy, and Microsoft Entra ID.</li>
-          <li>Supported system administration tasks, user account management, and software deployment.</li>
-          <li>Contributed to maintaining and improving library technology services.</li>
-        </ul>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <p class="section-intro reveal">Get To Know</p>
+    <h2 class="section-title reveal">About Me</h2>
+    <img
+      src="./assets/csu-logo.png"
+      alt="Colorado State University Logo"
+      class="csu-logo reveal"
+    />
+    <div class="about-text reveal">
+      <p>
+        I’m a Computer Science major at Colorado State University, originally from India. Every day I dive into cybersecurity—running Splunk queries, fine-tuning Nessus scans, and crafting PowerShell scripts to automate routine tasks. On campus, I collaborate on hackathons and help maintain our AD environment; off campus, I mentor peers on vulnerability assessment best practices. I thrive on hands-on problem solving—and a fresh cup of coffee always helps kick things off!
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects">
+    <p class="section-intro reveal">Take a Look</p>
+    <h2 class="section-title reveal">Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card reveal">
+        <img src="./assets/project-1.png" alt="HR Monitoring App" />
+        <h4>HR Monitoring Web App</h4>
+        <div class="proj-btns">
+          <button
+            class="btn"
+            onclick="location.href='https://github.com/mahanyasbaira/HR_Monitoring_Website'"
+          >
+            GitHub
+          </button>
+        </div>
       </div>
-    </section>
-    <section id="skills" class="section animate slide-in-right">
-      <h2>Skills</h2>
-      <ul class="skills-list">
-        <li>Vulnerability Assessment</li>
-        <li>Splunk</li>
-        <li>Qualys</li>
-        <li>Nessus</li>
-        <li>Wireshark</li>
-        <li>Active Directory</li>
-        <li>Microsoft Entra ID</li>
-        <li>Python</li>
-        <li>PowerShell</li>
-        <li>PDQ Deploy</li>
-      </ul>
-    </section>
-    <section id="contact" class="section animate fade-in">
-      <h2>Contact</h2>
-      <p>Fort Collins, CO 80521 | <a href="tel:+19833337689">+1(983) 333-7689</a> | <a href="mailto:mahanyas.baira@colostate.edu">mahanyas.baira@colostate.edu</a></p>
-      <p><a href="https://github.com/mahanyasbaira" target="_blank">GitHub</a> | <a href="https://www.linkedin.com/in/mahanyasbaira" target="_blank">LinkedIn</a></p>
-    </section>
-  </main>
+      <div class="project-card reveal">
+        <img src="./assets/project-2.png" alt="Portfolio Site" />
+        <h4>Portfolio Site</h4>
+        <div class="proj-btns">
+          <button
+            class="btn"
+            onclick="location.href='https://github.com/mahanyasbaira/html-css-js-portfolio'"
+          >
+            GitHub
+          </button>
+          <button
+            class="btn outline"
+            onclick="location.href='https://mahanyasbaira.github.io/html-css-js-portfolio/'"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- High School Leadership -->
+  <section id="leadership">
+    <p class="section-intro reveal">Lead & Learn</p>
+    <h2 class="section-title reveal">High School Leadership</h2>
+    <div class="service-wrapper">
+      <div class="service-card reveal">
+        <img src="./assets/dsr-logo.png" alt="DRS International School Logo" />
+        <h4>Design Tech & Robotics Captain</h4>
+        <span class="date">Aug 2022 – May 2024</span>
+        <p>
+          Led hands-on robotics projects, organized weekly workshops, and mentored teammates to build innovative solutions—fostering creativity and collaboration.
+        </p>
+        <p><strong>Skills:</strong> Initiative · Educational Leadership</p>
+      </div>
+      <div class="service-card reveal">
+        <img src="./assets/dsr-logo.png" alt="DRS International School Logo" />
+        <h4>ICT Captain</h4>
+        <span class="date">Aug 2022 – May 2024</span>
+        <p>
+          Managed tech events, supported classmates with coding and troubleshooting, and inspired peers to explore design & programming.
+        </p>
+        <p><strong>Skills:</strong> Leadership · Team Management</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Community Service -->
+  <section id="community">
+    <p class="section-intro reveal">Give Back</p>
+    <h2 class="section-title reveal">Community Service</h2>
+    <div class="service-wrapper">
+      <div class="service-card reveal">
+        <img src="./assets/rotary-logo.png" alt="Interact Rotary Club Logo" />
+        <h4>Director of IT, Interact Club</h4>
+        <span class="date">Oct 2022 – Jun 2023</span>
+        <p>
+          Organized book drives and cyber-safety workshops for kids, then delivered books & notes to a local orphanage.
+        </p>
+        <p><strong>Skills:</strong> Planning · Public Speaking</p>
+      </div>
+      <div class="service-card reveal">
+        <img src="./assets/cas-icon.png" alt="CAS Activities Icon" />
+        <h4>IB CAS Highlights</h4>
+        <span class="date">2022 – 2024</span>
+        <p>
+          • Environmental clean-up drive at Horsetooth Reservoir<br />
+          • Tutored under-resourced youth in basic literacy
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <p class="section-intro reveal">Let’s Chat</p>
+    <h2 class="section-title reveal">Contact Me</h2>
+    <div class="contact-cards">
+      <div class="contact-card reveal">
+        <img src="./assets/email.png" alt="Email Icon" />
+        <a href="mailto:mahanyasbaira16@gmail.com">mahanyasbaira16@gmail.com</a>
+      </div>
+      <div class="contact-card reveal">
+        <img src="./assets/linkedin.png" alt="LinkedIn Icon" />
+        <a href="https://www.linkedin.com/in/mahanyasbaira">
+          linkedin.com/in/mahanyasbaira
+        </a>
+      </div>
+      <div class="contact-card reveal">
+        <img src="./assets/github.png" alt="GitHub Icon" />
+        <a href="https://github.com/mahanyasbaira">github.com/mahanyasbaira</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills (last) -->
+  <section id="skills">
+    <p class="section-intro reveal">Technical</p>
+    <h2 class="section-title reveal">Skills & Tools</h2>
+    <div class="bubble-tree reveal">
+      <div class="bubble">Splunk</div>
+      <div class="bubble">Nessus</div>
+      <div class="bubble">Wireshark</div>
+      <div class="bubble">Qualys</div>
+      <div class="bubble">Python</div>
+      <div class="bubble">PowerShell</div>
+      <div class="bubble">Active Directory</div>
+      <div class="bubble">Entra ID</div>
+      <div class="bubble">PDQ Deploy</div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Mahanyas Baira. All rights reserved.</p>
+  </footer>
+
   <script src="script.js"></script>
 </body>
 </html>
