@@ -1,13 +1,14 @@
-/* mediaqueries.css */
 @media (max-width: 900px) {
   #profile { flex-direction: column; text-align: center; }
   .pic-container, .text-container { width: 100%; }
 }
+
 @media (max-width: 768px) {
   #desktop-nav { display: none; }
   #hamburger-nav { display: flex; padding: 1rem; }
   #hamburger-nav .menu-links.active { display: flex; }
 }
+
 @media (max-width: 500px) {
   .projects-grid, .service-wrapper, .bubble-tree {
     flex-direction: column; align-items: center;
