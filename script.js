@@ -1,5 +1,3 @@
-// script.js
-
 // Mobile menu toggle
 function toggleMenu() {
   document

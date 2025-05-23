@@ -14,12 +14,14 @@
   <link rel="stylesheet" href="mediaqueries.css" />
 </head>
 <body>
+
   <!-- Desktop nav -->
   <nav id="desktop-nav">
     <div class="logo">Mahanyas Baira</div>
     <ul class="nav-links">
       <li><a href="#about">About</a></li>
       <li><a href="#projects">Projects</a></li>
+      <li><a href="#certifications">Certifications</a></li>
       <li><a href="#leadership">Leadership</a></li>
       <li><a href="#community">Community</a></li>
       <li><a href="#contact">Contact</a></li>
@@ -36,6 +38,7 @@
     <div class="menu-links">
       <a href="#about" onclick="toggleMenu()">About</a>
       <a href="#projects" onclick="toggleMenu()">Projects</a>
+      <a href="#certifications" onclick="toggleMenu()">Certifications</a>
       <a href="#leadership" onclick="toggleMenu()">Leadership</a>
       <a href="#community" onclick="toggleMenu()">Community</a>
       <a href="#contact" onclick="toggleMenu()">Contact</a>
@@ -132,13 +135,43 @@
     </div>
   </section>
 
+  <!-- Certifications -->
+  <section id="certifications">
+    <p class="section-intro reveal">Certifications</p>
+    <h2 class="section-title reveal">My Certifications</h2>
+    <div class="cert-grid">
+      <div class="cert-card reveal">
+        <img
+          src="./assets/google-cloud-ai.png"
+          alt="Google Cloud AI Certificate"
+        />
+      </div>
+      <div class="cert-card reveal">
+        <img
+          src="./assets/azure-ai-essentials.png"
+          alt="Microsoft Azure AI Essentials Certificate"
+        />
+      </div>
+      <div class="cert-card reveal">
+        <img
+          src="./assets/java-data-structures.png"
+          alt="Java Data Structures Certificate"
+        />
+      </div>
+    </div>
+  </section>
+
   <!-- High School Leadership -->
   <section id="leadership">
     <p class="section-intro reveal">Lead & Learn</p>
     <h2 class="section-title reveal">High School Leadership</h2>
     <div class="service-wrapper">
       <div class="service-card reveal">
-        <img src="./assets/drs-logo.png" alt="DRS International School Logo" />
+        <img
+          src="./assets/drs-logo.png"
+          alt="DRS International School Logo"
+          class="drs-logo reveal"
+        />
         <h4>Design Tech & Robotics Captain</h4>
         <span class="date">Aug 2022 – May 2024</span>
         <p>
@@ -147,7 +180,11 @@
         <p><strong>Skills:</strong> Initiative · Educational Leadership</p>
       </div>
       <div class="service-card reveal">
-        <img src="./assets/drs-logo.png" alt="DRS International School Logo" />
+        <img
+          src="./assets/drs-logo.png"
+          alt="DRS International School Logo"
+          class="drs-logo reveal"
+        />
         <h4>ICT Captain</h4>
         <span class="date">Aug 2022 – May 2024</span>
         <p>
@@ -206,7 +243,7 @@
     </div>
   </section>
 
-  <!-- Skills (last) -->
+  <!-- Skills -->
   <section id="skills">
     <p class="section-intro reveal">Technical</p>
     <h2 class="section-title reveal">Skills & Tools</h2>
