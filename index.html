@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahanyas Baira Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mediaquery.css">
+</head>
+<body>
+  <!-- NAVIGATION -->
+  <nav id="desktop-nav">
+    <div class="logo">Mahanyas Baira</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience2">Experience</a></li>
+        <li><a href="#experience">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button id="dark-mode-toggle" class="dark-mode-btn">🌙</button></li>
+      </ul>
+    </div>
+  </nav>
+  <nav id="burger-nav">
+    <div class="logo">Mahanyas Baira</div>
+    <div class="burger-menu">
+      <div class="burger-icon" onclick="toggleMenu()">
+        <span></span><span></span><span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience2" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Skills</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#certifications" onclick="toggleMenu()">Certifications</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        <li><button id="dark-mode-toggle-mobile" class="dark-mode-btn">🌙</button></li>
+      </div>
+    </div>
+  </nav>
+
+  <!-- PROFILE -->
+  <section id="profile">
+    <div class="section_pic-container">
+      <img src="./assets/Mahanyas.jpg" class="profile-pic" alt="Mahanyas Baira profile pic"/>
+    </div>
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <p class="section__text__p2">Computer Science Student & AI/ML Researcher, Cyber Security Intern</p>
+      <div class="btn-container">
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">Contact Info</button>
+        <button class="btn btn-color-2" onclick="window.open('./assets/Mahanyas Baira\'s Resume.pdf', '_blank')" style="margin-left: 1rem;">
+          📄 Resume
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn" class="icon" onclick="location.href='https://www.linkedin.com/in/mahanyasbaira/'"/>
+        <img src="./assets/github.png" alt="GitHub" class="icon" onclick="location.href='https://github.com/mahanyasbaira'"/>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#about'"/>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <p class="section__text__p1">Get to Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon"/>
+            <h3>Experience</h3>
+            <p>AI/ML Researcher, Cyber Security Intern, IT Support Specialist</p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon"/>
+            <h3>Education</h3>
+            <p>Bachelor's in Computer Science</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>Dedicated undergraduate Computer Science student aspiring to be a Software Engineer. Strong knowledge in coding and system administration, along with expertise in Cybersecurity, and hands-on experience in vulnerability assessments, technical support, and innovative project development.</p>
+
+<br>I've completed coursework in Software Engineering, Artificial Intelligence, Machine Learning, Data Structures, Algorithms, Web Development, and Cybersecurity. My experience includes building full-stack applications, conducting AI/ML research, providing IT support, and developing innovative solutions to real-world problems.</p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience2'"/>
+  </section>
+
+<!-- EXPERIENCE -->
+<section id="experience2">
+  <p class="section__text__p1">Check out my</p>
+  <h1 class="title">Experience</h1>
+  <div class="experience-details-container">
+    <!-- Row 1 -->
+    <div class="about-containers">
+      <div class="details-container">
+        <img src="./assets/csu-logo.PNG" alt="CSU Logo" class="icon"/>
+        <h2>Colorado State University</h2>
+        <p>May 2025 – Present</p>
+        <p>IT Support Specialist</p>
+        <p class="experience-description">Provided technical support to staff, troubleshooting and resolving over 800 hardware and software issues. Installed and configured software on 550+ university computers.</p>
+      </div>
+      <div class="details-container">
+        <img src="./assets/csu-logo.PNG" alt="CSU Logo" class="icon"/>
+        <h2>Colorado State University</h2>
+        <p>March 2024 – August 2024</p>
+        <p>Cybersecurity Intern</p>
+        <p class="experience-description">Conducted 25+ vulnerability scans and compliance checks. Analyzed and resolved 30+ security alerts. Led 5 university-wide cybersecurity workshops for over 1,000 students and staff.</p>
+      </div>
+      <div class="details-container">
+        <img src="./assets/education.png" alt="Harvard Logo" class="icon"/>
+        <h2>International Internship Program</h2>
+        <p>June 2023 – October 2023</p>
+        <p>One-on-One Mentorship from Harvard University Professor</p>
+        <p class="experience-description">Conducted AI/ML research under Dr. Aleksandar Jevremovic. Developed and optimized 3+ neural network models using Python, TensorFlow, and PyTorch. Authored a 15-page research paper.</p>
+      </div>
+    </div>
+
+    <!-- Row 2 -->
+    <div class="about-containers">
+      <div class="details-container">
+        <img src="./assets/education.png" alt="Colorado State University Logo" class="icon"/>
+        <h2>Colorado State University</h2>
+        <p>Anticipated – Dec 2027</p>
+        <p>Bachelor's in Computer Science</p>
+        <p class="experience-description">Currently pursuing Computer Science degree with focus on software engineering, cybersecurity, and artificial intelligence.</p>
+      </div>
+      <div class="details-container">
+        <img src="./assets/education.png" alt="DRS International Logo" class="icon"/>
+        <h2>DRS International School</h2>
+        <p>August 2022 – May 2024</p>
+        <p>International Baccalaureate Diploma Program</p>
+        <p class="experience-description">Completed rigorous IB curriculum with focus on Computer Science and Mathematics, demonstrating academic excellence.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- SKILLS -->
+<section id="experience">
+  <p class="section__text__p1">Explore My</p>
+  <h1 class="title">Skills</h1>
+  <div class="experience-details-container">
+    <div class="about-containers">
+      <div class="details-container">
+        <h2 class="experience-sub-title">Programming Languages</h2>
+        <div class="article-container">
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Java</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>JavaScript</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Python</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>C</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>SQL</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>TypeScript</h3><p>Intermediate</p></div></article>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">Technologies & Tools</h2>
+        <div class="article-container">
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Next.js</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>React</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>TensorFlow</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PyTorch</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Git/GitHub</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Nessus</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Burpsuite</h3><p></p></div></article>
+        </div>
+      </div>
+      <div class="details-container">
+        <h2 class="experience-sub-title">IT Systems & Databases</h2>
+        <div class="article-container">
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Active Directory</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>MySQL</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PostgreSQL</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Power BI</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Microsoft Entra ID</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>PDQ Deploy</h3><p></p></div></article>
+          <article><img src="./assets/checkmark.png" class="icon" /><div><h3>Tenable.sc</h3><p></p></div></article>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+</section>
+
+
+<!-- PROJECTS -->
+<section id="projects">
+  <p class="section__text__p1">Browse My Recent</p>
+  <h1 class="title">Projects</h1>
+  <div class="projects-grid">
+    <div class="project-item">
+      <div class="project-image">
+        <img src="./assets/Knights of Legend Object Oriented Programming.jpg" alt="Knights of Legend RPG" />
+      </div>
+      <h2 class="project-title">Knights of Legend: Object Oriented Programming RPG</h2>
+      <p class="project-description">Java console-based RPG with clean architecture and modular design using interfaces and abstract classes. Features strategic combat, mystical fortunes, and team-based gameplay.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mahanyasbaira/KnightFight_Game'">GitHub</button>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <div class="project-image">
+        <img src="./assets/AI-Form-Builder.jpg" alt="AI Form Builder Application" />
+      </div>
+      <h2 class="project-title">AI Form Builder</h2>
+      <p class="project-description">An AI-powered form generation platform that lets users effortlessly create, publish, and manage forms using natural language prompts. Built with Next.js, TypeScript, Drizzle ORM, React, OpenAI API, and Stripe.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mahanyasbaira/AI-Form-Builder'">GitHub</button>
+      </div>
+    </div>
+    
+    <div class="project-item">
+      <div class="project-image">
+        <img src="./assets/Employee-Management-App.jpg" alt="Employee Management App" />
+      </div>
+      <h2 class="project-title">Employee Management App | IB Computer Science IA</h2>
+      <p class="project-description">Native Android-based Employee Management System built with Android Studio and Firebase. Features user authentication, admin dashboard, real-time database integration, and task reminders.</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/mahanyasbaira/Employee-Management-App'">GitHub</button>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#certifications'" />
+</section>
+
+
+<!-- CERTIFICATIONS -->
+<section id="certifications">
+  <p class="section__text__p1">My Professional</p>
+  <h1 class="title">Certifications</h1>
+  <div class="certifications-grid">
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/Microsoft Azure AI Essentials Professional Certificate by Microsoft.jpeg" alt="Microsoft Azure AI Essentials" />
+      </div>
+      <div class="certification-info">
+        <h3>Microsoft Azure AI Essentials</h3>
+        <p>Professional Certificate by Microsoft</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/international internship program.jpg" alt="International Internship Program" />
+      </div>
+      <div class="certification-info">
+        <h3>International Internship Program</h3>
+        <p>By Harvard University Professor
+        </p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/Atlassian IT Service Management (ITSM) Professional Certificate.jpeg" alt="Atlassian ITSM" />
+      </div>
+      <div class="certification-info">
+        <h3>Atlassian IT Service Management</h3>
+        <p>ITSM Professional Certificate</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/AWS Solutions Architecture Job Simulation.jpg" alt="AWS Solutions Architecture" />
+      </div>
+      <div class="certification-info">
+        <h3>AWS Solutions Architecture</h3>
+        <p>Job Simulation Certificate</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/Anaconda Python for Data Science Professional Certificate.jpeg" alt="Anaconda Python Data Science" />
+      </div>
+      <div class="certification-info">
+        <h3>Anaconda Python for Data Science</h3>
+        <p>Professional Certificate</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/DevOps Professional Certificate by PagerDuty.jpeg" alt="DevOps Professional" />
+      </div>
+      <div class="certification-info">
+        <h3>DevOps Professional</h3>
+        <p>Certificate by PagerDuty</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/LambdaTest Test Automation Professional Certificate.jpeg" alt="LambdaTest Test Automation" />
+      </div>
+      <div class="certification-info">
+        <h3>LambdaTest Test Automation</h3>
+        <p>Professional Certificate</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/Google Cloud Digital Cloud Leader Cert Prep- 3 Innovating with Google Cloud Artificial Intelligence.jpeg" alt="Google Cloud AI" />
+      </div>
+      <div class="certification-info">
+        <h3>Google Cloud Digital Leader</h3>
+        <p>Innovating with Google Cloud AI</p>
+      </div>
+    </div>
+    
+    <div class="certification-item">
+      <div class="certification-image">
+        <img src="./assets/certifications/Complete Guide to Power BI for Data Analysts by Microsoft.jpeg" alt="Power BI Data Analysts" />
+      </div>
+      <div class="certification-info">
+        <h3>Power BI for Data Analysts</h3>
+        <p>Complete Guide by Microsoft</p>
+      </div>
+    </div>
+  </div>
+  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+</section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon"/>
+        <p><a href="mailto:mahanyasbaira16@gmail.com">mahanyasbaira16@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon"/>
+        <p><a href="https://www.linkedin.com/in/mahanyasbaira/">LinkedIn</a></p>
+      </div>
+      <div class="contact-info-container">
+        <button class="btn btn-color-1" onclick="window.open('./assets/Mahanyas Baira\'s Resume.pdf', '_blank')">
+          📄 Download Resume
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <nav>
+      <div class="nav-links-container">
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience2">Experience</a></li>
+          <li><a href="#experience">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
